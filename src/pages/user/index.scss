@@ -1,0 +1,36 @@
+.page {
+  @apply min-h-screen bg-white;
+}
+
+// ============================================================
+// 用户页样式
+// 文件路径示例: src/pages/user/index.scss
+// ============================================================
+
+// 安全区域适配
+.safe-area-top {
+  padding-top: env(safe-area-inset-top);
+}
+
+.safe-area-bottom {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+// Switch 组件微调（保证和主题色一致）
+.wx-switch-input {
+  border-color: #d9f99d !important;
+  &.wx-switch-input-checked {
+    background-color: #65a30d !important;
+    border-color: #65a30d !important;
+  }
+}
+
+// 类型选择卡片按下态
+.mbti-card-active {
+  transform: scale(0.97);
+}
+
+// 退出按钮按下态
+.logout-btn:active {
+  background-color: #fef2f2;
+}
